@@ -1,10 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: 'export',
-  images: { unoptimized: true },
-  trailingSlash: true,
-  basePath: '/nextloading', // دقیقاً هم‌نام ریپازیتوری جدید
+  output: 'export', // این خط مهم است برای gh-pages
+  basePath: '/nextloading', // نام مخزن گیت‌هاب شما
+  assetPrefix: '/nextloading', // برای لود درست فایل‌های استاتیک
 };
 
 export default nextConfig;
